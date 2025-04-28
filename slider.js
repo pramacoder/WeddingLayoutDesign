@@ -86,3 +86,24 @@ document.addEventListener('DOMContentLoaded', function () {
     // Start the auto slide
     startAutoSlide();
 });
+
+//music
+
+let audio;
+let isPlaying = false;
+
+document.getElementById('musicButton').addEventListener('click', function () {
+    if (!audio) {
+        audio = new Audio('Audio/Tabuh Telu.mp3'); // Ganti path ke file audio Anda
+    }
+
+    if (isPlaying) {
+        audio.pause();
+        audio.currentTime = 0; // Reset audio to the beginning
+        isPlaying = false;
+    } else {
+        audio.play();
+        isPlaying = true;
+    }
+});
+
