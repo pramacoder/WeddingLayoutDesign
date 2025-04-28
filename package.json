@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "dependencies": {
     "@tailwindcss/cli": "^4.1.4",
     "@tailwindcss/postcss": "^4.1.4",
@@ -25,4 +26,17 @@
     "url": "https://github.com/pramacoder/WeddingLayoutDesign/issues"
   },
   "homepage": "https://github.com/pramacoder/WeddingLayoutDesign#readme"
+=======
+  "type": "module",
+  "scripts": {
+  "build": "postcss src/style.css -o dist/style.css",
+  "watch": "postcss src/style.css -o dist/style.css --watch"
+},
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.4",
+    "postcss": "^8.5.3",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^4.1.4"
+  }
+>>>>>>> 2879478a776b187bff87d2d1ff19527bcbcebab3
 }
