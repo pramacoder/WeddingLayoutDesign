@@ -8,7 +8,36 @@
     <title>BKD Wedding Organizer</title>
 </head>
 
+<style>
+    .slide {
+        transition: transform 0.8s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .animate-fadeIn {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .slider-container {
+        scrollbar-width: none;
+    }
+
+    .slider-container::-webkit-scrollbar {
+        display: none;
+    }
+</style>
+
 <body>
+    <!-- Cover yee -->
     <div class="relative">
         <img class="w-full h-[750px] object-cover"
             src="/Photo/DALL·E 2025-04-18 14.05.40 - A prewedding photo of a man and a woman, dressed in complete traditional Balinese attire, standing side by side in front of a painted background. The .webp">
@@ -18,6 +47,7 @@
             BKD Wedding Organizer</h1>
     </div>
 
+    <!-- ni text awalnya -->
     <div class="container mx-auto p-[100px] text-center">
         <h1 class="mt-30 mb-12 font-extrabold">Our Story</h1>
         <p class=" list-disc text-lg text-justify text-slate-800">
@@ -33,23 +63,115 @@
         </p>
     </div>
 
-    <div class="container mx-auto p-[100px]">
-        <div class="w-[800px] h-[857px]"><img class="w-auto h-[800px] object-cover"
-                src="/Photo/DALL·E 2025-04-18 14.26.31 - A pre-wedding photo of a man dressed in complete Balinese traditional attire, standing confidently while holding a keris (traditional Balinese dagger).webp"></img>
-        </div>
-        <div class="w-[505px] h-72"><span class="text-center text-black">mailliw.sapt
-                Willam Saputra
-                Leader of Freeport Indonesia
+    <!-- Foto wedding nya ku ganti -->
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-16">
+            <!-- yang cowo -->
+            <div class="w-full md:w-1/2 flex flex-col md:flex-row items-center">
+                <div class="text-center md:text-right md:w-1/2 mb-4 md:mb-0 md:pr-4">
+                    <p class="text-2xl font-bold font-['Inria_Serif']">mailliw.sapt</p>
+                    <h2 class="text-5xl md:text-6xl font-bold font-['Inria_Serif'] leading-tight">Willam Saputra</h2>
+                    <p class="text-xl font-light font-['Inria_Serif'] mt-2">Leader of Freeport Indonesia</p>
+                    <p class="text-base font-light font-['Inria_Serif'] mt-4">First son of Cahya Tirta, CIA.Engineering
+                        & Geraldine Blackpink</p>
+                </div>
+                <div class="w-full md:w-1/2 h-64 md:h-96 overflow-hidden rounded-lg">
+                    <img class="w-full h-full object-cover object-center"
+                        src="Photo/DALL·E 2025-04-18 14.26.31 - A pre-wedding photo of a man dressed in complete Balinese traditional attire, standing confidently while holding a keris (traditional Balinese dagger).webp"
+                        alt="William dalam Pakaian Tradisional Bali" />
+                </div>
+            </div>
 
-                First son of Cahya Tirta, CIA.Engineering & Geraldine Blackpink</span></div>
+            <!-- Yang cewe -->
+            <div class="w-full md:w-1/2 flex flex-col md:flex-row items-center md:flex-row-reverse">
+                <div class="text-center md:text-left md:w-1/2 mb-4 md:mb-0 md:pl-4">
+                    <p class="text-2xl font-bold font-['Inria_Serif']">purwanadita</p>
+                    <h2 class="text-5xl md:text-6xl font-bold font-['Inria_Serif'] leading-tight">Hesti Purwanadita</h2>
+                    <p class="text-xl font-light font-['Inria_Serif'] mt-2">CEO of Glad2Glow</p>
+                    <p class="text-base font-light font-['Inria_Serif'] mt-4">Second daughter of Wiratama, S.Pd, M.Kom &
+                        Theresia, S.Kom</p>
+                </div>
+                <div class="w-full md:w-1/2 h-64 md:h-96 overflow-hidden rounded-lg">
+                    <img class="w-full h-full object-cover object-center"
+                        src="/Photo/DALL·E 2025-04-18 14.28.10 - A pre-wedding photo of a woman dressed in complete Balinese traditional attire, standing confidently while holding a Balinese fan (kipas bali) in fron.webp"
+                        alt="Hesti dalam Pakaian Tradisional Bali" />
+                </div>
+            </div>
+        </div>
+
+        <!-- ni text lanjutannya -->
+        <div class="max-w-3xl mx-auto p-8 text-center">
+            <h1 class="text-4xl md:text-5xl mb-8 font-extrabold font-['Inria_Serif']">The Wedding</h1>
+            <p class="text-lg text-justify text-slate-800 font-['Inter'] mb-4">
+                The days leading up to their wedding were filled with joy and anticipation. Their love story was no
+                longer
+                just a fairy tale; it was their reality. Surrounded by friends, family, and loved ones, they vowed to
+                cherish and support each other for the rest of their lives. Their wedding day was a reflection of their
+                journey—a celebration of love, laughter, and all the little moments that had led them to this beautiful
+                chapter.
+            </p>
+            <p class="text-lg text-justify text-slate-800 font-['Inter']">
+                And so, from the lecture halls of university to the cozy café by the lake, their love story continues to
+                unfold. Now, with hearts full of gratitude and excitement, William and Skyee invite you to join them in
+                celebrating the next chapter of their journey.
+            </p>
+        </div>
     </div>
 
-    <!-- <div class="">
-        <h3>William Saputra</h3>
-        <img class="w-auto h-[800px] left-[800px]"
-            src="/Photo/DALL·E 2025-04-18 14.26.31 - A pre-wedding photo of a man dressed in complete Balinese traditional attire, standing confidently while holding a keris (traditional Balinese dagger).webp"
-            alt="">
-    </div> -->
+    <div class="max-w-5xl w-full mx-auto">
+        <h1 class="text-3xl font-bold text-center mb-6 text-gray-800 font-['Inria_Serif']">Gallery</h1>
+        <div class="relative bg-white rounded-xl shadow-lg overflow-hidden">
+            <div class="relative h-80 md:h-96 w-full overflow-hidden" id="slider-wrapper">
+                <div class="flex transition-transform duration-500 h-full" id="slider-track">
+                    <!-- Slide 1 -->
+                    <div class="slide min-w-full h-full flex-shrink-0">
+                        <img src="/Photo/DALL·E 2025-04-18 14.05.40 - A prewedding photo of a man and a woman, dressed in complete traditional Balinese attire, standing side by side in front of a painted background. The .webp"
+                            alt="Image 1" class="w-full h-full object-cover -translate-y-1">
+                        <div class="absolute bottom-0 left-0 right-0">
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide min-w-full h-full flex-shrink-0">
+                        <img src="/Photo/DALL·E 2025-04-18 14.06.23 - A prewedding photo of a man and a woman dressed in complete traditional Balinese attire, standing side by side in front of a painted background. They .webp"
+                            alt="Image 2" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0">
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide min-w-full h-full flex-shrink-0">
+                        <img src="/Photo/DALL·E 2025-04-18 14.38.00 - A romantic prewedding photo in a scenic outdoor setting. The scene includes a beautiful traditional Balinese temple and lush greenery with a lake in t.webp"
+                            alt="Image 3" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0">
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="slide min-w-full h-full flex-shrink-0">
+                        <img src="/Photo/DALL·E 2025-04-19 23.02.41 - A romantic scene where a man named William is proposing to a woman named Skyee. William is kneeling down on one knee, holding a beautiful engagement r.webp"
+                            alt="Image 4" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0">
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="slide min-w-full h-full flex-shrink-0">
+                        <img src="/Photo/DALL·E 2025-04-19 23.02.57 - A romantic scene depicting a couple at a cozy café by the lake at sunset. The man, William, is dressed in a casual button-up shirt and jeans, while th.webp"
+                            alt="Image 5" class="w-full h-full object-cover">
+                        <div class="absolute bottom-0 left-0 right-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Indicators -->
+            <div class="flex justify-center gap-2 py-3" id="indicators">
+                <!-- Indicators will be added via JavaScript -->
+            </div>
+        </div>
+    </div>
+    <script src="slider.js"></script>
 </body>
 
 </html>
