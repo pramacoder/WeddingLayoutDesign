@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
 </head>
 
 <style>
@@ -43,18 +46,24 @@
             src="/Photo/prewed3.webp">
         <div class="bg-gradient-to-t from-[#170E0C] to-transparent absolute top-0 left-0 w-full h-full"></div>
         <h1
-            class="font-mono absolute top-[30px] left-1/2 justify-center transform -translate-x-1/2 -translate-y-1/2 text-[24px] text-white">
-            BKD Wedding Organizer</h1>
+            class="font-['Inria_Serif'] absolute top-[400px] left-1/2 justify-center transform -translate-x-1/2 -translate-y-1/2 text-[100px] text-white">
+            The Wedding of</h1>
+        <p
+            class="font-['Inria_Serif'] absolute top-[500px] left-1/2 justify-center transform -translate-x-1/2 -translate-y-1/2 text-[40px] text-white">
+            William Saputra & Skyee Kanahaya</p>
+        <p
+            class="font-['Inria_Serif'] absolute top-[560px] left-1/2 justify-center transform -translate-x-1/2 -translate-y-1/2 text-[20px] text-white">
+            Wednesday, April 30th, 2025   ------   At Atlas Beach Club Bali</p>
     </div>
 
     <!-- ni text awalnya -->
     <div class="container mx-auto p-[100px] text-center">
-        <h1 class="mt-30 mb-12 font-extrabold">Our Story</h1>
+        <h1 class="mt-30 mb-12 font-extrabold font-['Inria_Serif'] text-[60px]">Our Story</h1>
         <p class=" list-disc text-lg text-justify text-slate-800">
-            Once Upon a Time in College...<br>
+            Once Upon a Time in College...<br><br>
             William Saputra and Skyee Kanahaya were just two ordinary classmates at university, each lost in their own
             world of books, assignments, and dreams. But little did they know, fate had a different story in store for
-            them. It all started in a crowded lecture hall where their eyes met for the first time. <br>
+            them. It all started in a crowded lecture hall where their eyes met for the first time. <br><br>
             Skyee, with her radiant smile and easy laugh, caught William’s attention immediately. He couldn’t quite
             explain it, but there was something magnetic about her. But as the days went by, they became mere
             acquaintances, sharing notes and exchanging casual conversations about class topics. Despite their friendly
@@ -63,42 +72,53 @@
         </p>
     </div>
 
-    <!-- Foto wedding nya ku ganti -->
-    <div class="container mx-auto px-4 py-8">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-16">
-            <!-- yang cowo -->
-            <div class="w-full md:w-1/2 flex flex-col md:flex-row items-center">
-                <div class="text-center md:text-right md:w-1/2 mb-4 md:mb-0 md:pr-4">
-                    <p class="text-2xl font-bold font-['Inria_Serif']">mailliw.sapt</p>
-                    <h2 class="text-5xl md:text-6xl font-bold font-['Inria_Serif'] leading-tight">Willam Saputra</h2>
-                    <p class="text-xl font-light font-['Inria_Serif'] mt-2">Leader of Freeport Indonesia</p>
-                    <p class="text-base font-light font-['Inria_Serif'] mt-4">First son of Cahya Tirta, CIA.Engineering
-                        & Geraldine Blackpink</p>
-                </div>
-                <div class="w-full md:w-1/2 h-64 md:h-96 overflow-hidden rounded-lg">
-                    <img class="w-full h-full object-cover object-center"
-                        src="Photo/willy.webp"
-                        alt="William dalam Pakaian Tradisional Bali" />
-                </div>
-            </div>
 
-            <!-- Yang cewe -->
-            <div class="w-full md:w-1/2 flex flex-col md:flex-row items-center md:flex-row-reverse">
-                <div class="text-center md:text-left md:w-1/2 mb-4 md:mb-0 md:pl-4">
-                    <p class="text-2xl font-bold font-['Inria_Serif']">purwanadita</p>
-                    <h2 class="text-5xl md:text-6xl font-bold font-['Inria_Serif'] leading-tight">Hesti Purwanadita</h2>
-                    <p class="text-xl font-light font-['Inria_Serif'] mt-2">CEO of Glad2Glow</p>
-                    <p class="text-base font-light font-['Inria_Serif'] mt-4">Second daughter of Wiratama, S.Pd, M.Kom &
-                        Theresia, S.Kom</p>
-                </div>
-                <div class="w-full md:w-1/2 h-64 md:h-96 overflow-hidden rounded-lg">
-                    <img class="w-full h-full object-cover object-center"
-                        src="/Photo/skye.webp"
-                        alt="Hesti dalam Pakaian Tradisional Bali" />
-                </div>
+<div>
+    <div class="grid grid-cols-2 text-center items-center font-['Inria_Serif']">
+        <!-- Kolom Kiri -->
+        <div class="p-4">
+            <h2 class="text-3xl font-semibold mb-2">William Saputra</h2>
+            <div class="flex justify-center items-center space-x-2 mb-2">
+                <!-- Icon Instagram -->
+                <img src="Photo/Instagram.svg" alt="Instagram" class="w-5 h-5">
+                <!-- Teks -->
+                <span class="text-2xl text-beige text-[16px]">WillamSaputra</span>
             </div>
+            <p class="text-lg text-gray-600 mb-2">Leader of Freeport Indonesia</p>
+            <p class="text-sm text-gray-500">First son of Cahya Titra, CIA Engineering & Geraldine Blackpink</p>
         </div>
 
+        <!-- Kolom Kanan -->
+        <div>
+            <img class="w-full h-full object-cover object-center"
+                src="Photo/willy.webp"
+                alt="William dalam Pakaian Tradisional Bali" />
+        </div>
+    </div>
+    </div>
+    <div class="grid grid-cols-2 text-center items-center font-['Inria_Serif']">
+        <!-- Kolom Kiri -->
+        <div class="">
+            <img class="w-full h-full object-cover object-center"
+                src="Photo/skye.webp"
+                 alt="Skyee dalam Pakaian Tradisional Bali" />
+        </div>
+        
+        
+        <!-- Kolom Kanan -->
+        <div class="p-4 items-center text-center">
+            <h2 class="text-3xl font-semibold mb-2">Skyee Kanahaya</h2>
+            <div class="flex justify-center items-center space-x-2 mb-2">
+            <!-- Icon Instagram -->
+            <img src="Photo/Instagram.svg" alt="Instagram" class="w-5 h-5">
+            <!-- Teks -->
+            <span class="text-2xl text-beige text-[16px] ">WillamSaputra</span>
+            </div>
+            <p class="text-lg text-gray-600 mb-2">CEO of BKD grup</p>
+            <p class="text-sm text-gray-500">Second daughter of Wiratama, S.Pd, M.Kom & Theresia, S.Kom</p>
+        </div>
+    </div>
+</div>
         <!-- ni text lanjutannya -->
         <div class="max-w-3xl mx-auto p-8 text-center">
             <h1 class="text-4xl md:text-5xl mb-8 font-extrabold font-['Inria_Serif']">The Wedding</h1>
