@@ -47,8 +47,8 @@
         <div class="bg-gradient-to-t from-[#170E0C] to-transparent absolute top-0 left-0 w-full h-full"></div>
 
         <button id="musicButton" class="bg-beige rounded-full p-4 absolute top-[10px]">
-            <img src="Photo/Music.png" alt="Music Icon" class="w-12 h-12">
-        </button>
+            <img id="musicIcon" src="Photo/Music2.png" alt="Music Icon" class="w-12 h-12">
+          </button>          
           
         <h1
             class="font-['Inria_Serif'] absolute top-[400px] left-1/2 justify-center transform -translate-x-1/2 -translate-y-1/2 text-[100px] text-white">
@@ -60,7 +60,7 @@
             class="font-['Inria_Serif'] absolute top-[560px] left-1/2 justify-center transform -translate-x-1/2 -translate-y-1/2 text-[20px] text-white">
             Wednesday, April 30th, 2025   ------   At Atlas Beach Club Bali</p>
     </div>
-<div class="m-16">
+<div class="mt-16">
         <div class="text-center">
           <img src="Photo/VektorHiasan1.svg" alt="Border Image" class=" mx-auto w-[400px]">
         </div>
@@ -81,7 +81,7 @@
         </p>
     </div>
 
-<div class="mb-10">
+<div class="mb-16">
         <div class="text-center">
           <img src="Photo/VektorHiasan2.svg" alt="Border Image" class="mx-auto w-[400px]">
         </div>
@@ -155,56 +155,183 @@
     <div class="max-w-5xl w-full mx-auto">
         <h1 class="text-3xl font-bold text-center mb-6 text-gray-800 font-['Inria_Serif']">Gallery</h1>
         <div class="relative bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="relative h-80 md:h-96 w-full overflow-hidden" id="slider-wrapper">
+            <div class="relative h-85 md:h-85 w-full overflow-hidden rounded-xl" id="slider-wrapper">
                 <div class="flex transition-transform duration-300 h-full" id="slider-track">
+                    
                     <!-- Slide 1 -->
                     <div class="slide min-w-full h-full flex-shrink-0">
-                        <img src="/Photo/prewed1.webp"
-                            alt="Image 1" class="w-full h-full object-cover -translate-y-1">
-                        <div class="absolute bottom-0 left-0 right-0">
+                        <div class="w-full h-full overflow-hidden rounded-xl">
+                            <img src="/Photo/prewed1.webp"
+                                alt="Image 1" class="w-full h-full object-cover object-top">
                         </div>
                     </div>
-
+    
                     <!-- Slide 2 -->
                     <div class="slide min-w-full h-full flex-shrink-0">
-                        <img src="/Photo/prewed2.webp"
-                            alt="Image 2" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 left-0 right-0">
+                        <div class="w-full h-full overflow-hidden rounded-xl">
+                            <img src="/Photo/prewed2.webp"
+                                alt="Image 2" class="w-full h-full object-cover object-top">
                         </div>
                     </div>
-
+    
                     <!-- Slide 3 -->
                     <div class="slide min-w-full h-full flex-shrink-0">
-                        <img src="/Photo/prewed3.webp"
-                            alt="Image 3" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 left-0 right-0">
+                        <div class="w-full h-full overflow-hidden rounded-xl">
+                            <img src="/Photo/prewed3.webp"
+                                alt="Image 3" class="w-full h-full object-cover object-top">
                         </div>
                     </div>
-
+    
                     <!-- Slide 4 -->
                     <div class="slide min-w-full h-full flex-shrink-0">
-                        <img src="/Photo/Ngedate.webp"
-                            alt="Image 4" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 left-0 right-0">
+                        <div class="w-full h-full overflow-hidden rounded-xl">
+                            <img src="/Photo/Ngedate.webp"
+                                alt="Image 4" class="w-full h-full object-cover object-top">
                         </div>
                     </div>
-
+    
                     <!-- Slide 5 -->
                     <div class="slide min-w-full h-full flex-shrink-0">
-                        <img src="/Photo/lamar.webp"
-                            alt="Image 5" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 left-0 right-0">
+                        <div class="w-full h-full overflow-hidden rounded-xl">
+                            <img src="/Photo/lamar.webp"
+                                alt="Image 5" class="w-full h-full object-cover object-top">
                         </div>
                     </div>
                 </div>
             </div>
-
+    
             <!-- Indicators -->
             <div class="flex justify-center gap-2 py-3" id="indicators">
                 <!-- Indicators will be added via JavaScript -->
             </div>
         </div>
+    </div>   
+    
+    <div class="mt-12 mb-12 max-w-xl mx-auto">
+        <!-- YouTube Player Container -->
+        <div class="relative rounded-xl overflow-hidden shadow-lg bg-black" id="youtube-container">
+          <!-- Thumbnail -->
+          <div class="relative" id="thumbnail-container">
+            <img 
+              src="https://img.youtube.com/vi/DOOrIxw5xOw/hqdefault.jpg" 
+              alt="Video Thumbnail" 
+              class="w-full aspect-video object-cover transition-opacity hover:opacity-80 cursor-pointer"
+              id="thumbnail"
+              onclick="playVideo()"
+            >
+            
+            <!-- Play Button -->
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+              <div class="bg-white/90 w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
+                <div class="w-0 h-0 border-y-8 border-y-transparent border-l-12 border-l-red-600 ml-1"></div>
+              </div>
+            </div>
+            
+            <!-- YouTube Link -->
+            <a 
+              href="https://www.youtube.com/watch?v=DOOrIxw5xOw" 
+              target="_blank" 
+              class="absolute inset-0 flex items-center justify-center pointer-events-none">
+            >
+            </a>
+          </div>
+          
+          <!-- Video Container (Hidden initially) -->
+          <div id="video-container" class="hidden">
+            <!-- iframe will be inserted here -->
+          </div>
+        </div>
     </div>
+
+    <div class="text-center py-8 px-4 bg-gray-50">
+        <h1 class="text-4xl font-bold mb-8 text-gray-800 font-['Inria_Serif']">Save the Date</h1>
+      
+        <div class="flex flex-wrap justify-center items-center gap-6 max-w-4xl mx-auto mb-8">
+            <div class="flex flex-col items-center bg-white rounded-lg shadow-md p-6 w-24">
+                <div id="days" class="text-3xl font-bold text-indigo-600">00</div>
+                <div class="text-sm text-gray-500 mt-2">Days</div>
+            </div>
+        </div>
+
+        <div class="flex flex-wrap justify-center items-center gap-6 max-w-4xl mx-auto mb-8">
+          <!-- Hours -->
+          <div class="flex flex-col items-center bg-white rounded-lg shadow-md p-6 w-24">
+            <div id="hours" class="text-3xl font-bold text-indigo-600">00</div>
+            <div class="text-sm text-gray-500 mt-2">Hours</div>
+          </div>
+      
+          <!-- Minutes -->
+          <div class="flex flex-col items-center bg-white rounded-lg shadow-md p-6 w-24">
+            <div id="minutes" class="text-3xl font-bold text-indigo-600">00</div>
+            <div class="text-sm text-gray-500 mt-2">Minutes</div>
+          </div>
+      
+          <!-- Seconds -->
+          <div class="flex flex-col items-center bg-white rounded-lg shadow-md p-6 w-24">
+            <div id="seconds" class="text-3xl font-bold text-indigo-600">00</div>
+            <div class="text-sm text-gray-500 mt-2">Seconds</div>
+          </div>
+        </div>
+      
+        <p class="text-gray-600 text-lg">Event Date: <span class="font-semibold">Thursday, 1st May, 2025</span></p>
+    </div>
+
+    <div class="bg-gray-100 flex flex-col items-center justify-center text-center px-4">
+        <div class="text-black mb-6">
+            <p class="text-lg md:text-xl">
+              <strong><span id="guestCount" class="text-black font-bold">0</span> guest</strong> response will join.
+            </p>
+         </div>
+        
+          <hr class="w-full max-w-md border-gray-400 mb-6" />
+        
+        <button 
+            onclick="addRsvp()"
+            class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded shadow flex items-center gap-2 transition">
+            Reservation (RSVP)
+        </button>
+        </div>
+    </div>
+      
+    <div class="bg-white py-8 px-4">
+        <h1 class="text-3xl font-bold text-center text-gray-800 mb-10 font-['Inria_Serif']">Wishes</h1>
+      
+        <!-- Daftar Wish -->
+        <div id="wishList" class="space-y-6 max-w-2xl mx-auto">
+          <!-- Contoh item (akan diganti dinamis via JS) -->
+          <div class="flex gap-4 items-start">
+            <div class="flex-shrink-0 w-12 h-12 bg-blue-200 text-blue-800 font-bold rounded-full flex items-center justify-center">
+              D
+            </div>
+            <div class="bg-white border border-gray-200 shadow-md rounded-xl p-4 w-full">
+              <p class="font-semibold text-gray-800">Dee</p>
+              <p class="text-sm text-gray-500 mb-2">at Bogor</p>
+              <p class="italic text-gray-600">"Beautiful 💞"</p>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Form Kirim Ucapan -->
+        <div class="mt-12 max-w-xl mx-auto">
+          <p class="font-semibold text-gray-700 mb-4">Send a wish:</p>
+          <form id="wishForm" class="space-y-4">
+            <input type="text" id="name" placeholder="Your full name"
+              class="w-full px-4 py-2 rounded-lg border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+            
+            <input type="text" id="location" placeholder="Your address"
+              class="w-full px-4 py-2 rounded-lg border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+            
+            <textarea id="message" rows="3" placeholder="Your message..."
+              class="w-full px-4 py-2 rounded-lg border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400" required></textarea>
+            
+            <button type="submit"
+              class="w-full bg-yellow-200 text-gray-800 font-semibold py-2 rounded-full hover:bg-yellow-300 transition">
+              Submit Wish
+            </button>
+          </form>
+        </div>
+    </div>
+      
     <script src="slider.js"></script>
 </body>
 </html>
