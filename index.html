@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
+    <!-- <link rel="stylesheet" href="dist/style.css"> -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </head>
 
 <style>
@@ -39,41 +42,93 @@
     }
 </style>
 
-<body>
+<body class="overscroll-none">
+    <nav class="bg-white shadow-md sticky top-0">
+        <div class="max-w-screen-xl mx-auto px-4">
+            <div class="flex justify-between md:justify-center items-center">
+                <div class="hidden lg:flex items-center space-x-2 absolute left-4">
+                    <span class="font-script text-rose-400 text-xl">W</span>
+                    <span class="text-rose-600 font-serif">&</span>
+                    <span class="font-script text-rose-400 text-xl">H</span>
+                </div>
+
+                <div class="hidden md:flex">
+                    <ul class="flex items-center space-x-1">
+                        <li>
+                            <a href="#"
+                                class="block py-4 px-4 text-rose-500 font-serif uppercase tracking-wide text-sm hover-underline-animation">Cover</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-4 px-4 text-gray-600 font-serif uppercase tracking-wide text-sm hover-underline-animation hover:text-rose-500">Story</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-4 px-4 text-gray-600 font-serif uppercase tracking-wide text-sm hover-underline-animation hover:text-rose-500">Couple</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-4 px-4 text-gray-600 font-serif uppercase tracking-wide text-sm hover-underline-animation hover:text-rose-500">Gallery</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-4 px-4 text-gray-600 font-serif uppercase tracking-wide text-sm hover-underline-animation hover:text-rose-500">Date</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-4 px-4 text-gray-600 font-serif uppercase tracking-wide text-sm hover-underline-animation hover:text-rose-500">Wishes</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- rsvp -->
+                <div class="hidden lg:flex items-center absolute right-4">
+                    <a href="#"
+                        class="px-4 py-1.5 bg-rose-400 text-white rounded-full hover:bg-rose-500 hover-bg-transition text-sm font-serif uppercase tracking-wide shadow-sm">RSVP</a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
     <!-- Cover yee -->
     <div class="relative">
-        <img class="w-full h-[750px] object-cover"
-            src="/Photo/prewed3.webp">
+        <div class="bg-cover">
+            <div class="pt-80 pb-80 relative">
+                <div
+                    class="absolute w-full h-full top-0 left-0 bg-cover bg-center bg-no-repeat bg-fixed bg-[url(Photo/prewed3.webp)]">
+                </div>
+                <div class="items-center text-center justify-center">
+                    <h1 class="relative font-['Inria_Serif'] text-8xl text-center font-bold text-white">
+                        The Wedding of</h1>
+                    <p class="font-['Inria_Serif'] text-3xl relative text-center text-white">
+                        William Saputra & Hesti Puranadita</p>
+                    <p class="font-['Inria_Serif'] text-xl relative text-center text-white">
+                        Wednesday, April 30th, 2025 ------ At Atlas Beach Club Bali</p>
+                </div>
+            </div>
+        </div>
+        <!-- <img class="w-full h-[750px] object-cover" src="/Photo/prewed3.webp"> -->
         <div class="bg-gradient-to-t from-[#170E0C] to-transparent absolute top-0 left-0 w-full h-full"></div>
-
         <button id="musicButton" class="bg-beige rounded-full p-4 absolute top-[10px]">
             <img src="Photo/Music.png" alt="Music Icon" class="w-12 h-12">
         </button>
-          
-        <h1
-            class="font-['Inria_Serif'] absolute top-[400px] left-1/2 justify-center transform -translate-x-1/2 -translate-y-1/2 text-[100px] text-white">
-            The Wedding of</h1>
-        <p
-            class="font-['Inria_Serif'] absolute top-[500px] left-1/2 justify-center transform -translate-x-1/2 -translate-y-1/2 text-[40px] text-white">
-            William Saputra & Skyee Kanahaya</p>
-        <p
-            class="font-['Inria_Serif'] absolute top-[560px] left-1/2 justify-center transform -translate-x-1/2 -translate-y-1/2 text-[20px] text-white">
-            Wednesday, April 30th, 2025   ------   At Atlas Beach Club Bali</p>
+
     </div>
-<div class="m-16">
+    <div class="m-16">
         <div class="text-center">
-          <img src="Photo/VektorHiasan1.svg" alt="Border Image" class=" mx-auto w-[400px]">
+            <img src="Photo/VektorHiasan1.svg" alt="Border Image" class=" mx-auto w-[400px]">
         </div>
-</div>
+    </div>
     <!-- ni text awalnya -->
     <div class="container mx-auto p-[50px] text-center">
-        <h1 class="mx-10 font-extrabold font-['Inria_Serif'] text-[60px]">Our Story</h1>
-        <p class=" list-disc text-lg text-justify text-slate-800">
+        <h1 class="mx-10 font-extrabold font-['Inria_Serif'] text-[60px] text-rose-500">Our Story</h1>
+        <p class="text-lg text-justify text-gray-600">
             Once Upon a Time in College...<br><br>
-            William Saputra and Skyee Kanahaya were just two ordinary classmates at university, each lost in their own
+            William Saputra and Hesti Puranadita were just two ordinary classmates at university, each lost in their own
             world of books, assignments, and dreams. But little did they know, fate had a different story in store for
             them. It all started in a crowded lecture hall where their eyes met for the first time. <br><br>
-            Skyee, with her radiant smile and easy laugh, caught William’s attention immediately. He couldn’t quite
+            Hesti , with her radiant smile and easy laugh, caught William’s attention immediately. He couldn’t quite
             explain it, but there was something magnetic about her. But as the days went by, they became mere
             acquaintances, sharing notes and exchanging casual conversations about class topics. Despite their friendly
             exchanges, there was something unspoken between them, a growing connection that neither of them dared to
@@ -81,265 +136,249 @@
         </p>
     </div>
 
-<div class="mb-10">
+    <div class="mb-10">
         <div class="text-center">
-          <img src="Photo/VektorHiasan2.svg" alt="Border Image" class="mx-auto w-[400px]">
-        </div>
-</div>
-      
-<div>
-    <div class="grid grid-cols-2 text-center items-center font-['Inria_Serif']">
-        <!-- Kolom Kiri -->
-        <div class="p-4">
-            <h2 class="text-3xl font-semibold mb-2">William Saputra</h2>
-            <div class="flex justify-center items-center space-x-2 mb-2">
-                <!-- Icon Instagram -->
-                <img src="Photo/Instagram.svg" alt="Instagram" class="w-5 h-5">
-                <!-- Teks -->
-                <span class="text-2xl text-beige text-[16px]">WillamSaputra</span>
-            </div>
-            <p class="text-lg text-gray-600 mb-2">Leader of Freeport Indonesia</p>
-            <p class="text-sm text-gray-500">First son of Cahya Titra, CIA Engineering & Geraldine Blackpink</p>
-        </div>
-
-        <!-- Kolom Kanan -->
-        <div>
-            <img class="w-full h-full object-cover object-center"
-                src="Photo/willy.webp"
-                alt="William dalam Pakaian Tradisional Bali" />
-        </div>
-    </div>
-    </div>
-    <div class="grid grid-cols-2 text-center items-center font-['Inria_Serif']">
-        <!-- Kolom Kiri -->
-        <div class="">
-            <img class="w-full h-full object-cover object-center"
-                src="Photo/skye.webp"
-                 alt="Skyee dalam Pakaian Tradisional Bali" />
-        </div>
-        
-        
-        <!-- Kolom Kanan -->
-        <div class="p-4 items-center text-center">
-            <h2 class="text-3xl font-semibold mb-2">Skyee Kanahaya</h2>
-            <div class="flex justify-center items-center space-x-2 mb-2">
-            <!-- Icon Instagram -->
-            <img src="Photo/Instagram.svg" alt="Instagram" class="w-5 h-5">
-            <!-- Teks -->
-            <span class="text-2xl text-beige text-[16px] ">WillamSaputra</span>
-            </div>
-            <p class="text-lg text-gray-600 mb-2">CEO of BKD grup</p>
-            <p class="text-sm text-gray-500">Second daughter of Wiratama, S.Pd, M.Kom & Theresia, S.Kom</p>
-        </div>
-    </div>
-</div>
-        <!-- ni text lanjutannya -->
-        <div class="max-w-3xl mx-auto p-8 text-center">
-            <h1 class="text-4xl md:text-5xl mb-8 font-extrabold font-['Inria_Serif']">The Wedding</h1>
-            <p class="text-lg text-justify text-slate-800 font-['Inter'] mb-4">
-                The days leading up to their wedding were filled with joy and anticipation. Their love story was no
-                longer
-                just a fairy tale; it was their reality. Surrounded by friends, family, and loved ones, they vowed to
-                cherish and support each other for the rest of their lives. Their wedding day was a reflection of their
-                journey—a celebration of love, laughter, and all the little moments that had led them to this beautiful
-                chapter.
-            </p>
-            <p class="text-lg text-justify text-slate-800 font-['Inter']">
-                And so, from the lecture halls of university to the cozy café by the lake, their love story continues to
-                unfold. Now, with hearts full of gratitude and excitement, William and Skyee invite you to join them in
-                celebrating the next chapter of their journey.
-            </p>
+            <img src="Photo/VektorHiasan2.svg" alt="Border Image" class="rotate-180 mx-auto w-[400px]">
         </div>
     </div>
 
-    <div class="max-w-5xl w-full mx-auto">
-        <h1 class="text-3xl font-bold text-center mb-6 text-gray-800 font-['Inria_Serif']">Gallery</h1>
-        <div class="relative bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="relative h-80 md:h-96 w-full overflow-hidden" id="slider-wrapper">
-                <div class="flex transition-transform duration-300 h-full" id="slider-track">
-                    <!-- Slide 1 -->
-                    <div class="slide min-w-full h-full flex-shrink-0">
-                        <img src="/Photo/prewed1.webp"
-                            alt="Image 1" class="w-full h-full object-cover -translate-y-1">
-                        <div class="absolute bottom-0 left-0 right-0">
-                        </div>
-                    </div>
-
-                    <!-- Slide 2 -->
-                    <div class="slide min-w-full h-full flex-shrink-0">
-                        <img src="/Photo/prewed2.webp"
-                            alt="Image 2" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 left-0 right-0">
-                        </div>
-                    </div>
-
-                    <!-- Slide 3 -->
-                    <div class="slide min-w-full h-full flex-shrink-0">
-                        <img src="/Photo/prewed3.webp"
-                            alt="Image 3" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 left-0 right-0">
-                        </div>
-                    </div>
-
-                    <!-- Slide 4 -->
-                    <div class="slide min-w-full h-full flex-shrink-0">
-                        <img src="/Photo/Ngedate.webp"
-                            alt="Image 4" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 left-0 right-0">
-                        </div>
-                    </div>
-
-                    <!-- Slide 5 -->
-                    <div class="slide min-w-full h-full flex-shrink-0">
-                        <img src="/Photo/lamar.webp"
-                            alt="Image 5" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 left-0 right-0">
-                        </div>
-                    </div>
+    <div class="container mx-auto px-4 py-8">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-16">
+            <!-- yang cowo -->
+            <div class="w-full md:w-1/2 flex flex-col md:flex-row items-center">
+                <div class="text-center md:text-right md:w-1/2 mb-4 md:mb-0 md:pr-4">
+                    <p class="text-xl font-medium text-gray-500 font-['Inria_Serif']">mailliw.sapt</p>
+                    <h2 class="text-3xl md:text-6xl text-rose-500 font-bold font-['Inria_Serif'] leading-tight">Willam
+                        Saputra</h2>
+                    <p class="text-xl font-light text-rose-300 font-['Inria_Serif'] mt-2">Leader of Freeport Indonesia
+                    </p>
+                    <p class="text-base font-light text-gray-500 font-['Inria_Serif'] mt-4">First son of Cahya Tirta,
+                        CIA.Engineering
+                        & Geraldine Blackpink</p>
                 </div>
-<<<<<<< HEAD
+                <div class="w-full md:w-1/2 h-64 md:h-96 overflow-hidden rounded-lg">
+                    <img class="w-full h-full object-cover object-center" src="Photo/willy.webp"
+                        alt="William dalam Pakaian Tradisional Bali" />
+                </div>
             </div>
 
-            <!-- Indicators -->
-            <div class="flex justify-center gap-2 py-3" id="indicators">
-                <!-- Indicators will be added via JavaScript -->
+            <div class="w-full md:w-1/2 flex flex-col md:flex-row items-center">
+                <div class="w-full md:w-1/2 h-64 md:h-96 overflow-hidden rounded-lg">
+                    <img class="w-full h-full object-cover object-center" src="/Photo/skye.webp"
+                        alt="Hesti dalam Pakaian Tradisional Bali" />
+                </div>
+                <div class="text-center md:text-left md:w-1/2 mb-4 md:mb-0 md:pl-4">
+                    <p class="text-xl font-medium text-gray-500 font-['Inria_Serif']">purwanadita</p>
+                    <h2 class="text-3xl md:text-6xl text-rose-500 font-bold font-['Inria_Serif'] leading-tight">Hesti
+                        Purwanadita</h2>
+                    <p class="text-xl font-light text-rose-300 font-['Inria_Serif'] mt-2">CEO of Glad2Glow</p>
+                    <p class="text-base font-light text-gray-500 font-['Inria_Serif'] mt-4">Second daughter of Wiratama,
+                        S.Pd, M.Kom &
+                        Theresia, S.Kom</p>
+                </div>
             </div>
         </div>
     </div>
-        
-    <div class="mt-12 mb-12 max-w-xl mx-auto">
-        <!-- YouTube Player Container -->
-        <div class="relative rounded-xl overflow-hidden shadow-lg bg-black" id="youtube-container">
-          <!-- Thumbnail -->
-          <div class="relative" id="thumbnail-container">
-            <img 
-              src="https://img.youtube.com/vi/DOOrIxw5xOw/hqdefault.jpg" 
-              alt="Video Thumbnail" 
-              class="w-full aspect-video object-cover transition-opacity hover:opacity-80 cursor-pointer"
-              id="thumbnail"
-              onclick="playVideo()"
-            >
-            
-            <!-- Play Button -->
-            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-              <div class="bg-white/90 w-14 h-14 rounded-full flex items-center justify-center shadow-lg">
-                <div class="w-0 h-0 border-y-8 border-y-transparent border-l-12 border-l-red-600 ml-1"></div>
-              </div>
-            </div>
-            
-            <!-- YouTube Link -->
-            <a 
-              href="https://www.youtube.com/watch?v=DOOrIxw5xOw" 
-              target="_blank" 
-              class="absolute inset-0 flex items-center justify-center pointer-events-none">
-            >
-            </a>
-          </div>
-          
-          <!-- Video Container (Hidden initially) -->
-          <div id="video-container" class="hidden">
-            <!-- iframe will be inserted here -->
-          </div>
-=======
-            </div>
 
-            <!-- Indicators -->
-            <div class="flex justify-center gap-2 py-3" id="indicators">
-                <!-- Indicators will be added via JavaScript -->
-            </div>
->>>>>>> 234efcdbe1ef8be80180705ca44358dde12e20a5
+    <div class="mb-10">
+        <div class="text-center">
+            <img src="Photo/VektorHiasan2.svg" alt="Border Image" class=" mx-auto w-[400px]">
         </div>
     </div>
 
-    <div class="text-center py-8 px-4 bg-gray-50">
-        <h1 class="text-4xl font-bold mb-8 text-gray-800 font-['Inria_Serif']">Save the Date</h1>
-      
+    <!-- ni text lanjutannya -->
+    <div class="container mx-auto p-[50px] text-center">
+        <h1 class="text-4xl md:text-5xl mb-8 text-rose-500 font-extrabold font-['Inria_Serif']">The Wedding</h1>
+        <p class="text-lg text-justify text-gray-600">
+            The days leading up to their wedding were filled with joy and anticipation. Their love story was no
+            longer
+            just a fairy tale; it was their reality. Surrounded by friends, family, and loved ones, they vowed to
+            cherish and support each other for the rest of their lives. Their wedding day was a reflection of their
+            journey—a celebration of love, laughter, and all the little moments that had led them to this beautiful
+            chapter. <br>
+            And so, from the lecture halls of university to the cozy café by the lake, their love story continues to
+            unfold. Now, with hearts full of gratitude and excitement, William and Hesti invite you to join them in
+            celebrating the next chapter of their journey.
+        </p>
+    </div>
+
+    <div class="m-16">
+        <div class="text-center">
+            <img src="Photo/VektorHiasan1.svg" alt="Border Image" class=" mx-auto w-[400px]">
+        </div>
+    </div>
+
+    <!-- galerry tapi ngambil pake cdn -->
+    <div class="max-w-3xl w-full mx-auto">
+        <h1 class="text-4xl font-bold text-center text-rose-500 mb-6 text-gray-800 font-['Inria_Serif']">Gallery</h1>
+        <div id="gallery" class="relative w-full" data-carousel="slide">
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="Photo/lamar.webp"
+                        class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <img src="Photo/Ngedate.webp"
+                        class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="Photo/prewed1.webp"
+                        class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="Photo/prewed2.webp"
+                        class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="Photo/prewed3.webp"
+                        class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="">
+                </div>
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img src="Photo/Willy_Ngedate.png"
+                        class="absolute block max-w-full h-auto -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                        alt="">
+                </div>
+            </div>
+            <!-- slider dari cdn -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
+        </div>
+    </div>
+
+    <div class="m-16">
+        <div class="text-center">
+            <img src="Photo/VektorHiasan1.svg" alt="Border Image" class=" mx-auto w-[400px]">
+        </div>
+    </div>
+
+    <div class="text-center py-8 px-4">
+        <h1 class="text-4xl font-bold mb-8 text-rose-500 font-['Inria_Serif']">Save the Date</h1>
         <div class="flex flex-wrap justify-center items-center gap-6 max-w-4xl mx-auto mb-8">
             <div class="flex flex-col items-center bg-white rounded-lg shadow-md p-6 w-24">
-                <div id="days" class="text-3xl font-bold text-indigo-600">00</div>
+                <div id="days" class="text-3xl font-bold text-rose-400">00</div>
                 <div class="text-sm text-gray-500 mt-2">Days</div>
+            </div>
+            <!-- Hours -->
+            <div class="flex flex-col items-center bg-white rounded-lg shadow-md p-6 w-24">
+                <div id="hours" class="text-3xl font-bold text-rose-400">00</div>
+                <div class="text-sm text-gray-500 mt-2">Hours</div>
+            </div>
+
+            <!-- Minutes -->
+            <div class="flex flex-col items-center bg-white rounded-lg shadow-md p-6 w-24">
+                <div id="minutes" class="text-3xl font-bold text-rose-400">00</div>
+                <div class="text-sm text-gray-500 mt-2">Minutes</div>
+            </div>
+
+            <!-- Seconds -->
+            <div class="flex flex-col items-center bg-white rounded-lg shadow-md p-6 w-24">
+                <div id="seconds" class="text-3xl font-bold text-rose-400">00</div>
+                <div class="text-sm text-gray-500 mt-2">Seconds</div>
             </div>
         </div>
 
-        <div class="flex flex-wrap justify-center items-center gap-6 max-w-4xl mx-auto mb-8">
-          <!-- Hours -->
-          <div class="flex flex-col items-center bg-white rounded-lg shadow-md p-6 w-24">
-            <div id="hours" class="text-3xl font-bold text-indigo-600">00</div>
-            <div class="text-sm text-gray-500 mt-2">Hours</div>
-          </div>
-      
-          <!-- Minutes -->
-          <div class="flex flex-col items-center bg-white rounded-lg shadow-md p-6 w-24">
-            <div id="minutes" class="text-3xl font-bold text-indigo-600">00</div>
-            <div class="text-sm text-gray-500 mt-2">Minutes</div>
-          </div>
-      
-          <!-- Seconds -->
-          <div class="flex flex-col items-center bg-white rounded-lg shadow-md p-6 w-24">
-            <div id="seconds" class="text-3xl font-bold text-indigo-600">00</div>
-            <div class="text-sm text-gray-500 mt-2">Seconds</div>
-          </div>
-        </div>
-      
-        <p class="text-gray-600 text-lg">Event Date: <span class="font-semibold">Thursday, 1st May, 2025</span></p>
+        <p class="text-gray-600 text-lg">Event Date: <span class="text-rose-500 font-semibold">Thursday, 1st May,
+                2025</span></p>
     </div>
 
-    <div class="bg-gray-100 flex flex-col items-center justify-center text-center px-4">
+    <div class="flex flex-col items-center justify-center text-center px-4">
         <div class="text-black mb-6">
             <p class="text-lg md:text-xl">
-              <strong><span id="guestCount" class="text-black font-bold">0</span> guest</strong> response will join.
+                <strong class="text-rose-500"><span id="guestCount" class="text-rose-500 text-black font-bold">0</span>
+                    guest</strong> response will join.
             </p>
-         </div>
-        
-          <hr class="w-full max-w-md border-gray-400 mb-6" />
-        
-        <button 
-            onclick="addRsvp()"
+        </div>
+
+        <hr class="w-full max-w-md border-gray-400 mb-6" />
+
+        <button onclick="addRsvp()"
             class="bg-green-500 hover:bg-green-600 text-white font-semibold py-2 px-6 rounded shadow flex items-center gap-2 transition">
             Reservation (RSVP)
         </button>
+    </div>
+
+    <div class="m-16">
+        <div class="text-center">
+            <img src="Photo/VektorHiasan1.svg" alt="Border Image" class=" mx-auto w-[400px]">
         </div>
     </div>
-      
+
     <div class="bg-white py-8 px-4">
-        <h1 class="text-3xl font-bold text-center text-gray-800 mb-10 font-['Inria_Serif']">Wishes</h1>
-      
+        <h1 class="text-3xl font-bold text-center text-rose-500 mb-10 font-['Inria_Serif']">Wishes</h1>
+
         <!-- Daftar Wish -->
         <div id="wishList" class="space-y-6 max-w-2xl mx-auto">
-          <!-- Contoh item (akan diganti dinamis via JS) -->
-          <div class="flex gap-4 items-start">
-            <div class="flex-shrink-0 w-12 h-12 bg-blue-200 text-blue-800 font-bold rounded-full flex items-center justify-center">
-              D
+            <!-- Contoh item (akan diganti dinamis via JS) -->
+            <div class="flex gap-4 items-start">
+                <div
+                    class="flex-shrink-0 w-12 h-12 bg-blue-200 text-blue-800 font-bold rounded-full flex items-center justify-center">
+                    D
+                </div>
+                <div class="bg-white border border-gray-200 shadow-md rounded-xl p-4 w-full">
+                    <p class="font-semibold text-gray-800">Dee</p>
+                    <p class="text-sm text-gray-500 mb-2">at Bogor</p>
+                    <p class="italic text-gray-600">"Beautiful 💞"</p>
+                </div>
             </div>
-            <div class="bg-white border border-gray-200 shadow-md rounded-xl p-4 w-full">
-              <p class="font-semibold text-gray-800">Dee</p>
-              <p class="text-sm text-gray-500 mb-2">at Bogor</p>
-              <p class="italic text-gray-600">"Beautiful 💞"</p>
-            </div>
-          </div>
         </div>
-      
+
         <!-- Form Kirim Ucapan -->
         <div class="mt-12 max-w-xl mx-auto">
-          <p class="font-semibold text-gray-700 mb-4">Send a wish:</p>
-          <form id="wishForm" class="space-y-4">
-            <input type="text" id="name" placeholder="Your full name"
-              class="w-full px-4 py-2 rounded-lg border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
-            
-            <input type="text" id="location" placeholder="Your address"
-              class="w-full px-4 py-2 rounded-lg border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
-            
-            <textarea id="message" rows="3" placeholder="Your message..."
-              class="w-full px-4 py-2 rounded-lg border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400" required></textarea>
-            
-            <button type="submit"
-              class="w-full bg-yellow-200 text-gray-800 font-semibold py-2 rounded-full hover:bg-yellow-300 transition">
-              Submit Wish
-            </button>
-          </form>
+            <p class="font-semibold text-gray-700 mb-4">Send a wish:</p>
+            <form id="wishForm" class="space-y-4">
+                <input type="text" id="name" placeholder="Your full name"
+                    class="w-full px-4 py-2 rounded-lg border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    required>
+
+                <input type="text" id="location" placeholder="Your address"
+                    class="w-full px-4 py-2 rounded-lg border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    required>
+
+                <textarea id="message" rows="3" placeholder="Your message..."
+                    class="w-full px-4 py-2 rounded-lg border border-gray-300 bg-gray-50 focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    required></textarea>
+
+                <button type="submit"
+                    class="w-full bg-rose-200 text-rose-800 font-semibold py-2 rounded-full hover:bg-rose-400 transition">
+                    Submit Wish
+                </button>
+            </form>
         </div>
     </div>
-      
+    <div class="m-16">
+        <div class="text-center">
+            <img src="Photo/VektorHiasan1.svg" alt="Border Image" class=" mx-auto w-[400px]">
+        </div>
+    </div>
     <script src="slider.js"></script>
 </body>
 </html>
