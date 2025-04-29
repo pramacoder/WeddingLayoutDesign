@@ -134,6 +134,11 @@
     </div>
 </div>
         <!-- ni text lanjutannya -->
+    <div class="m-16">
+            <div class="text-center">
+              <img src="Photo/VektorHiasan1.svg" alt="Border Image" class=" mx-auto w-[400px]">
+            </div>
+    </div>
         <div class="max-w-3xl mx-auto p-8 text-center">
             <h1 class="text-4xl md:text-5xl mb-8 font-extrabold font-['Inria_Serif']">The Wedding</h1>
             <p class="text-lg text-justify text-slate-800 font-['Inter'] mb-4">
@@ -151,58 +156,91 @@
             </p>
         </div>
     </div>
-
-    <div class="max-w-5xl w-full mx-auto">
+    <div class="mb-10">
+        <div class="text-center">
+          <img src="Photo/VektorHiasan2.svg" alt="Border Image" class="mx-auto w-[400px]">
+        </div>
+    </div>
+    
+    <div class="max-w-5xl w-full mx-auto mb-[50px]">
         <h1 class="text-3xl font-bold text-center mb-6 text-gray-800 font-['Inria_Serif']">Gallery</h1>
         <div class="relative bg-white rounded-xl shadow-lg overflow-hidden">
-            <div class="relative h-80 md:h-96 w-full overflow-hidden" id="slider-wrapper">
-                <div class="flex transition-transform duration-300 h-full" id="slider-track">
+            <div class="relative w-full aspect-w-4 aspect-h-4 overflow-hidden" id="slider-wrapper"></div>
+                <div class="flex transition-transform duration-500 ease-in-out h-full" id="slider-track">
                     <!-- Slide 1 -->
                     <div class="slide min-w-full h-full flex-shrink-0">
-                        <img src="/Photo/prewed1.webp"
-                            alt="Image 1" class="w-full h-full object-cover -translate-y-1">
-                        <div class="absolute bottom-0 left-0 right-0">
-                        </div>
+                        <img src="/Photo/prewed1.webp" alt="Image 1" class="w-full h-full object-cover">
                     </div>
-
+    
                     <!-- Slide 2 -->
                     <div class="slide min-w-full h-full flex-shrink-0">
-                        <img src="/Photo/prewed2.webp"
-                            alt="Image 2" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 left-0 right-0">
-                        </div>
+                        <img src="/Photo/prewed2.webp" alt="Image 2" class="w-full h-full object-cover">
                     </div>
-
+    
                     <!-- Slide 3 -->
                     <div class="slide min-w-full h-full flex-shrink-0">
-                        <img src="/Photo/prewed3.webp"
-                            alt="Image 3" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 left-0 right-0">
-                        </div>
+                        <img src="/Photo/prewed3.webp" alt="Image 3" class="w-full h-full object-cover">
                     </div>
-
+    
                     <!-- Slide 4 -->
                     <div class="slide min-w-full h-full flex-shrink-0">
-                        <img src="/Photo/Ngedate.webp"
-                            alt="Image 4" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 left-0 right-0">
-                        </div>
+                        <img src="/Photo/Ngedate.webp" alt="Image 4" class="w-full h-full object-cover">
                     </div>
-
+    
                     <!-- Slide 5 -->
                     <div class="slide min-w-full h-full flex-shrink-0">
-                        <img src="/Photo/lamar.webp"
-                            alt="Image 5" class="w-full h-full object-cover">
-                        <div class="absolute bottom-0 left-0 right-0">
-                        </div>
+                        <img src="/Photo/lamar.webp" alt="Image 5" class="w-full h-full object-cover">
                     </div>
                 </div>
+    
+                <!-- Left & Right Navigation -->
+                <button id="prev" class="absolute top-1/2 left-4 transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-75 p-2 rounded-full shadow-lg z-10">
+                    &#10094;
+                </button>
+                <button id="next" class="absolute top-1/2 right-4 transform -translate-y-1/2 text-white bg-gray-800 bg-opacity-75 p-2 rounded-full shadow-lg z-10">
+                    &#10095;
+                </button>
             </div>
+        </div>
+    </div>
 
-            <!-- Indicators -->
-            <div class="flex justify-center gap-2 py-3" id="indicators">
-                <!-- Indicators will be added via JavaScript -->
+
+    <!--countdown-->
+    <div class="bg-gray-200 text-black font-['Inria_Serif']">
+        <div class="flex flex-col items-center justify-center h-screen">
+            <h1 class="text-4xl font-bold mb-4">Save the Date</h1>
+            
+            <div class="flex flex-col items-center space-y-4">
+              <div class="text-center">
+                <div id="days" class="text-6xl font-extrabold">04</div>
+                <div class="text-xl">Days</div>
+              </div>
+              <div class="flex items-center space-x-4">
+                <div class="text-center">
+                  <div id="hours" class="text-6xl font-extrabold">20</div>
+                  <div class="text-xl">Hours</div>
+                </div>
+                <div class="text-center">
+                  <div id="minutes" class="text-6xl font-extrabold">18</div>
+                  <div class="text-xl">Minutes</div>
+                </div>
+                <div class="text-center">
+                  <div id="seconds" class="text-6xl font-extrabold">19</div>
+                  <div class="text-xl">Seconds</div>
+                </div>
+              </div>
             </div>
+        
+            <p class="mt-4 text-xl">Wednesday, April 30th, 2025</p>
+        
+            <div class="mt-8">
+              <button id="saveButton" class="bg-teal-400 text-white py-2 px-6 rounded-lg shadow-lg flex items-center space-x-2">
+                <img src="/Photo/VectorKalender.svg" alt="Calendar Icon" class="w-5 h-5">
+                <span>Save Event to Calendar</span>
+              </button>
+            </div>
+        
+            <p id="guestResponse" class="mt-6 text-lg">0 guest response will join, let's send your response too.</p>
         </div>
     </div>
     <script src="slider.js"></script>

@@ -107,3 +107,104 @@ document.getElementById('musicButton').addEventListener('click', function () {
     }
 });
 
+//countdown
+// Set the target date for the wedding
+const targetDate = new Date("April 30, 2025 00:00:00").getTime();
+
+// Update the countdown every second
+const countdownFunction = setInterval(function() {
+  // Get the current date and time
+  const now = new Date().getTime();
+  
+  // Calculate the difference between now and the target date
+  const distance = targetDate - now;
+  
+  // Time calculations for days, hours, minutes, and seconds
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the results in the respective elements
+  document.getElementById("days").innerText = days;
+  document.getElementById("hours").innerText = hours;
+  document.getElementById("minutes").innerText = minutes;
+  document.getElementById("seconds").innerText = seconds;
+
+  // If the countdown is finished, display a message
+  if (distance < 0) {
+    clearInterval(countdownFunction);
+    document.getElementById("days").innerText = "0";
+    document.getElementById("hours").innerText = "0";
+    document.getElementById("minutes").innerText = "0";
+    document.getElementById("seconds").innerText = "0";
+    alert("The wedding day has arrived!");
+  }
+}, 1000);
+
+// Initialize guestCount variable
+let guestCount = 0;
+
+// Function to display the notification and increment guestCount when the "Save Event to Calendar" button is clicked
+document.getElementById("saveButton").addEventListener("click", function() {
+    guestCount++; // Increment guest count
+    alert("The event has been saved to your calendar!");
+    // Update the guest response message on the page
+    document.getElementById("guestResponse").innerText = `${guestCount} guest response(s) will join, let's send your response too.`;
+});
+
+
+const sliderTrack = document.getElementById('slider-track');
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+    const prevButton = document.getElementById('prev');
+    const nextButton = document.getElementById('next');
+    const indicatorsContainer = document.getElementById('indicators');
+    let currentIndex = 0;
+
+    // Function to move to the next slide
+    const goToSlide = (index) => {
+        if (index < 0) index = totalSlides - 1;
+        if (index >= totalSlides) index = 0;
+
+        // Move slider
+        sliderTrack.style.transform = `translateX(-${index * 100}%)`;
+        currentIndex = index;
+
+        // Update indicators
+        updateIndicators();
+    };
+
+    // Add indicators dynamically
+    const createIndicators = () => {
+        for (let i = 0; i < totalSlides; i++) {
+            const indicator = document.createElement('button');
+            indicator.classList.add('w-3', 'h-3', 'bg-gray-400', 'rounded-full', 'transition', 'duration-300', 'hover:bg-gray-600');
+            indicator.addEventListener('click', () => goToSlide(i));
+            indicatorsContainer.appendChild(indicator);
+        }
+        updateIndicators();
+    };
+
+    // Update indicator style
+    const updateIndicators = () => {
+        const indicators = indicatorsContainer.children;
+        for (let i = 0; i < totalSlides; i++) {
+            indicators[i].classList.remove('bg-gray-800');
+            if (i === currentIndex) {
+                indicators[i].classList.add('bg-gray-800');
+            }
+        }
+    };
+
+    // Button navigation
+    prevButton.addEventListener('click', () => goToSlide(currentIndex - 1));
+    nextButton.addEventListener('click', () => goToSlide(currentIndex + 1));
+
+    // Auto slide functionality (Optional)
+    setInterval(() => {
+        goToSlide(currentIndex + 1);
+    }, 5000); // Change slide every 5 seconds
+
+    // Initialize the gallery
+    createIndicators();
